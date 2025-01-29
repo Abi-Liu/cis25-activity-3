@@ -4,14 +4,19 @@
 #include <iostream>
 using namespace std;
 
+int getInt() {
+  int num;
+
+}
+
 int main() {
   char op;
   cout << "Select an operator:" << " +, -, *, /" << endl;
   cin >> op;
   int num1, num2;
   cout << "Enter two numbers:" << endl;
-  cin >> num1;
-  cin >> num2;
+  cin>>num1;
+  cin>>num2;
   switch (op) {
     case '+':
       cout << num1 + num2 << endl;
@@ -25,9 +30,12 @@ int main() {
     case '/':
       if(num2 == 0) {
         cout << "Error! Division by zero!" << endl;
-        return 0;
+        break;
       }
       cout << num1 / num2 << endl;
       break;
+    default:
+      cout << "Invalid operator! Please try again";
   }
+    return 0;
 }
