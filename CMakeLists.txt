@@ -3,4 +3,4 @@ project(activity3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(activity3 main.cpp)
+add_executable(activity3 GradeEvaluator/main.cpp)
